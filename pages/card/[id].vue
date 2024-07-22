@@ -40,13 +40,27 @@ export default {
 	},
 	data() {
 		return {
-			product: {},
+			product: 
+    {
+        "id": "30bd8488-895b-4acb-a729-99bd4f7479a1",
+        "name": "Giga Light MV 0530 LL   5L",
+        "article": "72098681",
+        "brand": null,
+        "full_name": "Масло моторное синтетическое ADDINOL Giga Light MV 0530 LL 5л",
+        "type": null,
+        "unit": null,
+        "weight": null,
+        "packing": null,
+        "property": null,
+        "photo_ref": null,
+        "photo_file": null,
+        "description": null
+    },,
 		}
 	},
 	async beforeMount(){
 		const route = useRoute();
-		this.product = await $fetch(`http://127.0.0.1:8001/api/products/${route.params.id}`)
-		// this.products = await $fetch('/api/products')
+		//this.product = await $fetch(`/api/products/${route.params.id}`)
 	},
 }
 </script>
