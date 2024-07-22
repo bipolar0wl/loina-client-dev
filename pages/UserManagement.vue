@@ -14,18 +14,18 @@
 			</template>
 		</Toolbar>
 		<DataTable
-			:value="users"
-			tableStyle="min-width: 50rem"
-			size="small"
-			rowGroupMode="rowspan"
-			:groupRowsBy="'role'"
-			filterDisplay="row"
-			v-model:filters="filters"
-			:globalFilterFields="['name', 'role']"
-			v-model:selection="selectedUsers"
-			v-model:editingRows="editingRows"
-			@row-edit-save="onRowEditSave"
-			editMode="row"
+				:value="users"
+				tableStyle="min-width: 50rem"
+				size="small"
+				rowGroupMode="rowspan"
+				:groupRowsBy="'role'"
+				filterDisplay="row"
+				v-model:filters="filters"
+				:globalFilterFields="['name', 'role']"
+				v-model:selection="selectedUsers"
+				v-model:editingRows="editingRows"
+				@row-edit-save="onRowEditSave"
+				editMode="row"
 		>
 			<template #header>
 				<div class="flex justify-end">
@@ -147,77 +147,77 @@ export default {
 				"superadmin", "admin", "editor", "viewer",
 			],
 			users: [
-    {
-        "id": "934f4788-8cf1-11eb-9088-001e67686f8d",
-        "name": "Усольцев П.А. РТ по 020822",
-        "email": "КАЗАНЬ",
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "fd4e6439-acc9-11de-9b9a-001517b51b24",
-        "name": "Administrator",
-        "email": "САНКТ-ПЕТЕРБУРГ",
-        "role": null,
-        "hashed_password": "superadmin"
-    },
-    {
-        "id": "4853e34e-a45b-11de-9b9a-001517b51b24",
-        "name": "Елисеев С.Б.",
-        "email": "АЛ",
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "9758c4a8-05c6-11ec-8bec-001e67686f8d",
-        "name": "Яковлев А.А.",
-        "email": "АСПб",
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "6a830259-ce0f-11e4-a164-001e67686f8d",
-        "name": "Трощенков Д.Ю.",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "28d46577-0132-11ed-ab47-000c29594b87",
-        "name": "Тимченко А.А.",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "6488f226-6aa5-11e6-bbc1-001e67686f8d",
-        "name": "Анучин С.Е.",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "efd0b0f9-a2d5-11de-9b9a-001517b51b24",
-        "name": "Федорова И.Ю.",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "28f4b2b4-a615-11e0-add7-001517b51b24",
-        "name": "Осипенков И.А. АЛ до 26.09.22",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    },
-    {
-        "id": "cd0a65f8-9f49-11e6-b1a8-001e67686f8d",
-        "name": "Яковлева Н.А.",
-        "email": null,
-        "role": "viewer",
-        "hashed_password": null
-    }
-],
+				{
+					"id": "934f4788-8cf1-11eb-9088-001e67686f8d",
+					"name": "Усольцев П.А. РТ по 020822",
+					"email": "КАЗАНЬ",
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "fd4e6439-acc9-11de-9b9a-001517b51b24",
+					"name": "Administrator",
+					"email": "САНКТ-ПЕТЕРБУРГ",
+					"role": "superadmin",
+					"hashed_password": null
+				},
+				{
+					"id": "4853e34e-a45b-11de-9b9a-001517b51b24",
+					"name": "Елисеев С.Б.",
+					"email": "АЛ",
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "9758c4a8-05c6-11ec-8bec-001e67686f8d",
+					"name": "Яковлев А.А.",
+					"email": "АСПб",
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "6a830259-ce0f-11e4-a164-001e67686f8d",
+					"name": "Трощенков Д.Ю.",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "28d46577-0132-11ed-ab47-000c29594b87",
+					"name": "Тимченко А.А.",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "6488f226-6aa5-11e6-bbc1-001e67686f8d",
+					"name": "Анучин С.Е.",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "efd0b0f9-a2d5-11de-9b9a-001517b51b24",
+					"name": "Федорова И.Ю.",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "28f4b2b4-a615-11e0-add7-001517b51b24",
+					"name": "Осипенков И.А. АЛ до 26.09.22",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				},
+				{
+					"id": "cd0a65f8-9f49-11e6-b1a8-001e67686f8d",
+					"name": "Яковлева Н.А.",
+					"email": null,
+					"role": "viewer",
+					"hashed_password": null
+				}
+			],
 			user: {},
 			selectedUsers: null,
 			submitted: false,
@@ -232,7 +232,7 @@ export default {
 	// 		required: true
 	// 	}
 	// },
-	async beforeMount(){
+	async beforeMount() {
 		//this.users = await $fetch('/api/users')
 	},
 	methods: {

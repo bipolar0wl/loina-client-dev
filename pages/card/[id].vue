@@ -17,8 +17,8 @@
 		<div class="card__menu">
 			<CatalogMenu :select-on="true"/>
 			<Image
-				src="./assets/no_image.webp"
-				preview
+					src="./assets/no_image.webp"
+					preview
 			/>
 		</div>
 	</div>
@@ -27,7 +27,7 @@
 <script>
 import Editor from 'primevue/editor';
 import CatalogMenu from '/components/catalog/menu.vue';
-import { useRoute } from 'vue-router';
+import {useRoute} from 'vue-router';
 
 definePageMeta({
 	layout: 'header'
@@ -40,25 +40,25 @@ export default {
 	},
 	data() {
 		return {
-			product: 
-    {
-        "id": "30bd8488-895b-4acb-a729-99bd4f7479a1",
-        "name": "Giga Light MV 0530 LL   5L",
-        "article": "72098681",
-        "brand": null,
-        "full_name": "Масло моторное синтетическое ADDINOL Giga Light MV 0530 LL 5л",
-        "type": null,
-        "unit": null,
-        "weight": null,
-        "packing": null,
-        "property": null,
-        "photo_ref": null,
-        "photo_file": null,
-        "description": null
-    },,
+			product:
+					{
+						"id": "30bd8488-895b-4acb-a729-99bd4f7479a1",
+						"name": "Giga Light MV 0530 LL   5L",
+						"article": "72098681",
+						"brand": null,
+						"full_name": "Масло моторное синтетическое ADDINOL Giga Light MV 0530 LL 5л",
+						"type": null,
+						"unit": null,
+						"weight": null,
+						"packing": null,
+						"property": null,
+						"photo_ref": null,
+						"photo_file": null,
+						"description": null
+					},
 		}
 	},
-	async beforeMount(){
+	async beforeMount() {
 		const route = useRoute();
 		//this.product = await $fetch(`/api/products/${route.params.id}`)
 	},
